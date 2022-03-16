@@ -1,23 +1,28 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - print all multiples of 3 || 5 below 1024
- * Return: 0.
+ * print_to_98 - print all real numbers to 98.
+ * @n: is the given number and we go up to 98.
+ *
+ * Return: no return just print.
  */
 
-int main(void)
+void print_to_98(int n)
 {
-int i, num;
+int i;
 
-num = 0;
-
-for (i = 1; i < 1024; i++)
+if (n > 98)
 {
-if (i % 3 == 0 || i % 5 == 0)
-num += i;
+for (i = n; i > 98; --i)
+printf("%d, ", i);
+printf("98\n");
 }
-printf("%d\n", num);
-
-return (0);
+else
+{
+for (i = n; i < 98; ++i)
+printf("%d, ", i);
+printf("98\n");
+}
 }
