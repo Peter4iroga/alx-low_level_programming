@@ -1,1 +1,1 @@
- more func tion on single linked list
+more function on singly linked list
